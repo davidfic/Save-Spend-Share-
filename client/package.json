@@ -17,7 +17,7 @@
     "uuid": "^3.3.2",
     "vue": "^2.6.10",
     "vue-justgage": "^1.0.4",
-    "vue-router": "^3.0.3",
+    "vue-router": "^3.0.6",
     "vuex": "^3.1.0"
   },
   "devDependencies": {

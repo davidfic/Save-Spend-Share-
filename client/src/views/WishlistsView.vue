@@ -1,44 +1,38 @@
 <template>
   <div class="container">
     <div class="wishlists">
-      <Header />
+      <Header/>
       <Wishlists v-bind:wishlists="wishlists"/>
     </div>
   </div>
-
 </template>
 
 <script>
-import Header from '../components/layout/Header'; 
-import Wishlists from '../components/Wishlists.vue';
+import Header from "../components/layout/Header";
+import Wishlists from "../components/Wishlists.vue";
 
-
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "WishlistsView",
   props: ["wishlist"],
   components: {
-    Wishlists,
+    Wishlists
   },
   data() {
     return {
-      wishlists: [] 
-    }
+      wishlists: []
+    };
   },
-  methods: {
-    
-  },
+  methods: {},
   created() {
-    axios.get('http://localhost:3333/wishlists')
-      .then(res => this.wishlists = res.data)
+    axios
+      .get("http://localhost:5000/api/wishlists")
+      .then(res => (this.wishlists = res.data))
       .catch(err => console.log(err));
-    }
-    
-
-}
+  }
+};
 </script>
 
 <style scoped>
-
 </style>

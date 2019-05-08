@@ -25,7 +25,7 @@ export default {
         onSubmit(e) {
             e.preventDefault();
             console.log('amount is ' + this.amount)
-            axios.post('http://localhost:5000/wishlists', {amount: this.amount})
+            axios.post('http://localhost:3333/wishlists', {amount: this.amount})
                 .then(function(response) {
                     console.log('response is ' + response ) ;
                 })

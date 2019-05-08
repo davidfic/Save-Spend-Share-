@@ -2,7 +2,7 @@
   <div class="container">
     <div class="about">
       <Header />
-      <h1>This is an absout page</h1>
+      <h1>This is an about page</h1>
     </div>
   </div>
 

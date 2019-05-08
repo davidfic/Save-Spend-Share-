@@ -11,7 +11,6 @@ const getters = {
 const actions  = {
     async fetchChores({commit}) {
         const response = await axios.get('http://localhost:3333/chores');
-        // const response = await axios.get('http://localhost:5000/chores');
         commit('setChores', response.data);
     },
     async addChore({commit}, title) {
