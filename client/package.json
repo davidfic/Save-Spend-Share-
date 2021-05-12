@@ -11,7 +11,7 @@
     "@vue/cli-service-global": "^3.7.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.5",
     "framework7": "^4.3.1",
     "framework7-vue": "^4.3.1",
